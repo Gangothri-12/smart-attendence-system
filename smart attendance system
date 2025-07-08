@@ -1,0 +1,374 @@
+Microsoft Windows [Version 10.0.26100.4484]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Windows\System32>pip install opencv-python
+Collecting opencv-python
+  Using cached opencv_python-4.12.0.88-cp37-abi3-win_amd64.whl.metadata (19 kB)
+Collecting numpy<2.3.0,>=2 (from opencv-python)
+  Using cached numpy-2.2.6-cp311-cp311-win_amd64.whl.metadata (60 kB)
+Using cached opencv_python-4.12.0.88-cp37-abi3-win_amd64.whl (39.0 MB)
+Using cached numpy-2.2.6-cp311-cp311-win_amd64.whl (12.9 MB)
+Installing collected packages: numpy, opencv-python
+  Attempting uninstall: numpy
+    Found existing installation: numpy 2.3.1
+    Uninstalling numpy-2.3.1:
+      Successfully uninstalled numpy-2.3.1
+  WARNING: The scripts f2py.exe and numpy-config.exe are installed in 'C:\Users\banda\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed numpy-2.2.6 opencv-python-4.12.0.88
+
+[notice] A new release of pip is available: 24.0 -> 25.1.1
+[notice] To update, run: C:\Users\banda\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe -m pip install --upgrade pip
+
+C:\Windows\System32>pip install numpy
+Requirement already satisfied: numpy in c:\users\banda\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (2.2.6)
+
+[notice] A new release of pip is available: 24.0 -> 25.1.1
+[notice] To update, run: C:\Users\banda\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe -m pip install --upgrade pip
+
+C:\Windows\System32>pip install face_recognition
+Collecting face_recognition
+  Using cached face_recognition-1.3.0-py2.py3-none-any.whl.metadata (21 kB)
+Collecting face-recognition-models>=0.3.0 (from face_recognition)
+  Using cached face_recognition_models-0.3.0-py2.py3-none-any.whl
+Collecting Click>=6.0 (from face_recognition)
+  Using cached click-8.2.1-py3-none-any.whl.metadata (2.5 kB)
+Collecting dlib>=19.7 (from face_recognition)
+  Using cached dlib-20.0.0.tar.gz (3.3 MB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Requirement already satisfied: numpy in c:\users\banda\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from face_recognition) (2.2.6)
+Collecting Pillow (from face_recognition)
+  Using cached pillow-11.3.0-cp311-cp311-win_amd64.whl.metadata (9.2 kB)
+Requirement already satisfied: colorama in c:\users\banda\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from Click>=6.0->face_recognition) (0.4.6)
+Using cached face_recognition-1.3.0-py2.py3-none-any.whl (15 kB)
+Using cached click-8.2.1-py3-none-any.whl (102 kB)
+Using cached pillow-11.3.0-cp311-cp311-win_amd64.whl (7.0 MB)
+Building wheels for collected packages: dlib
+  Building wheel for dlib (pyproject.toml) ... error
+  error: subprocess-exited-with-error
+
+  × Building wheel for dlib (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [41 lines of output]
+      running bdist_wheel
+      running build
+      running build_ext
+
+      ================================================================================
+      ================================================================================
+      ================================================================================
+
+                         CMake is not installed on your system!
+
+          Or it is possible some broken copy of cmake is installed on your system.
+          It is unfortunately very common for python package managers to include
+          broken copies of cmake.  So if the error above this refers to some file
+          path to a cmake file inside a python or anaconda or miniconda path then you
+          should delete that broken copy of cmake from your computer.
+
+          Instead, please get an official copy of cmake from one of these known good
+          sources of an official cmake:
+              - cmake.org (this is how windows users should get cmake)
+              - apt install cmake (for Ubuntu or Debian based systems)
+              - yum install cmake (for Redhat or CenOS based systems)
+
+          On a linux machine you can run `which cmake` to see what cmake you are
+          actually using.  If it tells you it's some cmake from any kind of python
+          packager delete it and install an official cmake.
+
+          More generally, cmake is not installed if when you open a terminal window
+          and type
+             cmake --version
+          you get an error.  So you can use that as a very basic test to see if you
+          have cmake installed.  That is, if cmake --version doesn't run from the
+          same terminal window from which you are reading this error message, then
+          you have not installed cmake.  Windows users should take note that they
+          need to tell the cmake installer to add cmake to their PATH.  Since you
+          can't run commands that are not in your PATH.  This is how the PATH works
+          on Linux as well, but failing to add cmake to the PATH is a particularly
+          common problem on windows and rarely a problem on Linux.
+
+      ================================================================================
+      ================================================================================
+      ================================================================================
+      [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for dlib
+Failed to build dlib
+ERROR: Could not build wheels for dlib, which is required to install pyproject.toml-based projects
+
+[notice] A new release of pip is available: 24.0 -> 25.1.1
+[notice] To update, run: C:\Users\banda\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe -m pip install --upgrade pip
+
+C:\Windows\System32>pip install pillow
+Collecting pillow
+  Using cached pillow-11.3.0-cp311-cp311-win_amd64.whl.metadata (9.2 kB)
+Using cached pillow-11.3.0-cp311-cp311-win_amd64.whl (7.0 MB)
+Installing collected packages: pillow
+Successfully installed pillow-11.3.0
+
+[notice] A new release of pip is available: 24.0 -> 25.1.1
+[notice] To update, run: C:\Users\banda\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe -m pip install --upgrade pip
+
+C:\Windows\System32>pip install cmake
+Requirement already satisfied: cmake in c:\users\banda\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (4.0.3)
+
+[notice] A new release of pip is available: 24.0 -> 25.1.1
+[notice] To update, run: C:\Users\banda\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe -m pip install --upgrade pip
+
+C:\Windows\System32>cd %USERPROFILE%\Downloads
+
+C:\Users\banda\Downloads>pip install dlib-19.24.1-cp311-cp311-win_amd64.whl
+Processing c:\users\banda\downloads\dlib-19.24.1-cp311-cp311-win_amd64.whl
+Installing collected packages: dlib
+Successfully installed dlib-19.24.1
+
+[notice] A new release of pip is available: 24.0 -> 25.1.1
+[notice] To update, run: C:\Users\banda\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe -m pip install --upgrade pip
+
+C:\Users\banda\Downloads>pip install face_recognition
+Collecting face_recognition
+  Using cached face_recognition-1.3.0-py2.py3-none-any.whl.metadata (21 kB)
+Collecting face-recognition-models>=0.3.0 (from face_recognition)
+  Using cached face_recognition_models-0.3.0-py2.py3-none-any.whl
+Collecting Click>=6.0 (from face_recognition)
+  Using cached click-8.2.1-py3-none-any.whl.metadata (2.5 kB)
+Requirement already satisfied: dlib>=19.7 in c:\users\banda\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from face_recognition) (19.24.1)
+Requirement already satisfied: numpy in c:\users\banda\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from face_recognition) (2.2.6)
+Requirement already satisfied: Pillow in c:\users\banda\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from face_recognition) (11.3.0)
+Requirement already satisfied: colorama in c:\users\banda\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from Click>=6.0->face_recognition) (0.4.6)
+Using cached face_recognition-1.3.0-py2.py3-none-any.whl (15 kB)
+Using cached click-8.2.1-py3-none-any.whl (102 kB)
+Installing collected packages: face-recognition-models, Click, face_recognition
+  WARNING: The scripts face_detection.exe and face_recognition.exe are installed in 'C:\Users\banda\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed Click-8.2.1 face-recognition-models-0.3.0 face_recognition-1.3.0
+
+[notice] A new release of pip is available: 24.0 -> 25.1.1
+[notice] To update, run: C:\Users\banda\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe -m pip install --upgrade pip
+
+C:\Users\banda\Downloads>import dlib
+'import' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\banda\Downloads>import face_recognition
+'import' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\banda\Downloads>print("dlib and face_recognition installed successfully!")
+Unable to initialize device PRN
+
+C:\Users\banda\Downloads>import dlib
+'import' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\banda\Downloads>python
+Python 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import dlib
+>>> import face_recognition
+>>> print("dlib and face_recognition installed successfully!")
+dlib and face_recognition installed successfully!
+>>> exit()
+
+C:\Users\banda\Downloads>SmartAttendanceSystem
+'SmartAttendanceSystem' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\banda\Downloads>cd SmartAttendanceSystem
+The system cannot find the path specified.
+
+C:\Users\banda\Downloads>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 642F-B5AF
+
+ Directory of C:\Users\banda\Downloads
+
+08-07-2025  10:24    <DIR>          .
+07-07-2025  18:21    <DIR>          ..
+05-07-2025  15:51         3,707,549 1000203996.jpg
+05-07-2025  12:36         1,558,813 1749577579763.pdf
+05-07-2025  12:32         1,178,009 1749631914462.pdf
+05-07-2025  12:40           217,289 1751085455876.pdf
+05-07-2025  12:47         8,190,628 1751202840109.pdf
+05-07-2025  12:42           302,534 1751233263290.pdf
+05-07-2025  12:42         2,846,064 1751240493528.pdf
+05-07-2025  12:43           181,682 1751529621049.pdf
+05-07-2025  12:45         1,086,677 1751645038569.pdf
+01-07-2025  18:52         1,145,477 1_Detailed_Adv.2025_23.06.2025-1.pdf
+17-03-2025  16:16         1,401,372 20FantasticKaliLinuxTools-1 (1).pdf
+17-03-2025  16:16         1,401,372 20FantasticKaliLinuxTools-1.pdf
+19-06-2025  22:39           152,258 6816629061.pdf
+22-03-2025  13:19            19,325 ABC ID 3rd year CAI-B.xlsx
+26-10-2024  12:51        53,465,480 AccessData_FTK_Imager_4.7.1 (1).exe
+26-10-2024  12:50        53,465,480 AccessData_FTK_Imager_4.7.1.exe
+23-09-2024  12:23        20,386,224 Advanced_Port_Scanner_2.5.3869.exe
+02-07-2025  18:57             2,088 AI_Agent_Setup_Guide.pdf
+17-03-2025  16:15           273,089 All Kali Linux Commands.pdf
+24-06-2025  15:08         2,863,104 AppSuite-PDF (1).msi
+24-06-2025  15:12         2,863,104 AppSuite-PDF (2).msi
+24-06-2025  15:07         2,863,104 AppSuite-PDF.msi
+28-05-2025  19:52         1,985,239 asset-v1_TechMahindraFoundation+19343+1701690221+type@asset+block@Reading_1-_Introduction_to_Cybersecurity.pdf
+24-06-2025  14:57           448,168 Bandaru Gangothri_Resume_Cyber.pdf
+18-06-2025  14:25           160,349 Bandaru Gangothri_Resume_Fresher - Copy.pdf
+02-06-2025  11:38            32,174 Bandaru Gangothri_Resume_Fresher.docx
+18-06-2025  14:25           160,349 Bandaru Gangothri_Resume_Fresher.pdf
+02-06-2025  20:11       423,457,320 Bhavani-Ward-1997-Telugu-pl3az-2025.mp4.crdownload
+17-01-2025  18:14         1,276,192 BraveBrowserSetup-BRV010.exe
+25-09-2024  10:52       321,697,760 burpsuite_community_windows-x64_v2024_7_6.exe
+25-09-2024  11:28               939 cacert(1).der
+30-06-2025  15:56    <DIR>          certificates
+11-04-2025  11:57         1,943,674 ChatGPT Image Apr 11, 2025, 11_57_08 AM.png
+26-09-2024  16:09       238,928,968 CiscoPacketTracer822_64bit_setup_signed.exe
+08-04-2025  18:41         1,194,261 computer networks imp questions_page-0001.jpg
+08-04-2025  18:49           100,734 COMPUTER-NETWORKS-MAY-2024.pdf
+23-06-2025  14:28            43,479 CRYPTOGRAPHY AND NETWORK SECURITY NOTES.docx
+28-05-2025  20:27         1,442,500 cyber certificate.pdf
+07-07-2025  19:30         4,981,445 cyber security project.pdf
+21-06-2025  19:35             8,838 Daily Work Sheet.xlsx
+08-04-2025  18:49           200,542 DEEP-LEARNING-MAY-2024.pdf
+23-04-2025  13:34         7,254,021 DEEP_LEARNING_LAB_MANUAL_MODIFIED.pdf
+11-06-2025  21:54           234,831 delta x.pdf
+08-04-2025  18:42         1,178,586 Design and Analysis of Algorithms  imp Questions_page-0001.jpg
+08-04-2025  18:48           166,206 DESIGN-AND-ANALYSIS-OF-ALGORITHMS-MAY-2024.pdf
+06-06-2025  09:49             1,060 developer_intern_hiring_format (1).csv
+06-06-2025  09:48             1,060 developer_intern_hiring_format.csv
+08-07-2025  10:24         2,825,619 dlib-19.24.1-cp311-cp311-win_amd64.whl
+05-03-2025  14:32            88,401 download.jpg
+05-07-2025  16:08           134,606 download.pdf
+24-06-2025  16:04         1,317,459 EAadhaar_2740960920008820220525132724_2406202516433.pdf
+02-11-2024  13:55         3,172,352 EasyPDFManuals.msi
+15-07-2024  18:42            30,415 Ex_Files_Adv_Python.zip
+13-06-2025  10:15         2,074,096 filmora-idco_setup_full1901.exe
+22-12-2024  10:03           373,248 Firefox Installer(1).exe
+25-09-2024  11:08           372,056 Firefox Installer.exe
+18-03-2025  16:49         3,101,692 fortimanager dumps questions.pdf
+20-06-2025  15:50           470,362 Fortinet Certified Associate in Cybersecurity.pdf
+20-06-2025  15:49           474,980 Fortinet Certified Fundamentals in Cybersecurity.pdf
+23-10-2024  15:11            19,951 Gangothri - freshers - 01.docx
+29-06-2025  13:40            48,275 Gangothri_Resume_CyberSecurity.docx
+29-06-2025  12:49           811,720 Gangothri_Resume_CyberSecurity.pdf
+07-07-2025  18:57        70,982,376 Git-2.50.0.2-64-bit (1).exe
+07-07-2025  18:18        70,982,376 Git-2.50.0.2-64-bit.exe
+17-03-2025  16:22         5,882,952 Hacking with Kali Linux - A Beginner's Guide to Ethical Hacking with Kali & Cybersecurity, Includes Linux Command Line, Penetration Testing, Security Systems and Tools for Computer by Stephen Fletcher.pdf
+30-09-2024  11:53           475,801 hashcalc-2.02-installer.exe
+30-09-2024  11:16         1,771,232 hashcalc-2.02-installer_Wybn-32.exe
+23-12-2024  12:59            26,624 IDServe.exe
+05-03-2025  14:27             6,386 images.jpg
+30-06-2025  18:51           119,710 IMG-20250514-WA0042.jpg
+24-06-2025  10:33           165,548 IMG-20250623-WA0005.jpg
+18-06-2025  14:31         3,257,954 IMG_20250618_142931.jpg
+18-06-2025  14:31         3,340,522 IMG_20250618_142939.jpg
+18-06-2025  14:31         3,421,239 IMG_20250618_142946.jpg
+28-05-2025  20:38           982,258 IMG_2800.JPG
+28-05-2025  20:36        14,670,468 IMG_2813.JPG
+20-06-2025  16:44            45,363 import_report_Local-FortiGate_root_2025-6-20-4_14_22.txt
+22-06-2025  12:32           118,867 infosys python foundation certificate.pdf
+18-10-2024  12:10       100,294,568 installer_Win8_Win11_x64_c8b07859679bb.exe
+23-09-2024  12:41        18,422,312 ipscan-3.9.1-setup.exe
+21-09-2024  14:39    <DIR>          kali-linux-2024.3-virtualbox-amd64
+19-09-2024  16:25     3,346,104,649 kali-linux-2024.3-virtualbox-amd64.7z
+08-04-2025  18:49            85,410 MICRO-PROCESSORS-AND-MICRO-CONTROLLERS-MAY-2024.pdf
+11-04-2025  10:15            14,618 MPMC SYLLABUS.docx
+10-02-2024  15:11       141,647,872 mysql-8.3.0-winx64.msi
+26-06-2025  14:50        45,068,288 mysql-workbench-community-8.0.42-winx64.msi
+22-12-2024  10:03        98,210,816 Nessus-10.8.3-x64(1).msi
+21-12-2024  19:27        98,210,816 Nessus-10.8.3-x64.msi
+22-12-2024  10:13        92,696,041 Nessus-10.8.3-x64.rar
+23-09-2024  12:56        33,969,480 nmap-7.95-setup.exe
+06-07-2025  18:18           137,590 NOC certificate NEW.docx
+06-07-2025  18:20           137,711 NOC certificate NEW.docx 1.docx
+26-10-2024  11:18         1,202,472 npcap-1.80.exe
+15-02-2025  10:35            17,115 OIP.jpg
+29-01-2025  18:38        86,902,816 OnVUE-24.17.114.exe
+27-09-2024  14:42         5,423,104 OpenVPN-2.6.12-I001-amd64.msi
+10-04-2025  14:26         2,489,752 OperaSetup.exe
+24-08-2023  14:29         3,531,534 original_msg.eml
+07-07-2025  19:18             3,647 Password_Strength_Checker_Complete_Document.pdf
+05-07-2025  16:09    <DIR>          personel
+10-07-2023  09:32        25,426,160 python-3.11.4-amd64.exe
+05-07-2024  14:38        26,772,456 python-3.12.4-amd64.exe
+30-03-2025  22:44         6,013,952 R20_CN Lab MANUAL _Chandu _FINAL_print.doc
+25-06-2025  15:43           808,147 Raviteja_Mainframe_4 Years_Resume.pdf
+28-05-2025  19:55         6,011,945 Reading_2-_Digital_and_Online_Banking_Frauds.pdf
+28-05-2025  20:02         5,203,237 Reading_3-_Common_Types_of_Cybercrimes.pdf
+28-05-2025  20:08           653,854 Reading_4-_Prevention_and_Legalities_of_Cybercrimes.pdf
+07-07-2025  18:07             1,607 README.md
+26-10-2024  12:54        33,754,448 RecoverMyEmail-Setup.exe
+29-06-2025  13:02            52,198 Resume (1).pdf
+23-12-2024  16:12     2,931,056,640 RHEL6-32bit.iso
+25-10-2024  19:49         1,951,880 screen-recorder.exe
+21-06-2024  12:08           504,973 Sentiment_Analysis _code.ipynb
+26-12-2024  10:22       332,418,680 setup (1).exe
+26-12-2024  10:31       332,418,680 setup (2).exe
+26-12-2024  10:36       332,418,680 setup (3).exe
+11-04-2024  19:13           545,000 Setup.exe
+24-04-2025  13:40         1,382,183 SOC LAB MANUAL.docx
+08-04-2025  18:49           112,953 SOFTWARE-PROJECT-MANAGEMENT-MAY-2024.pdf
+27-01-2025  10:21       801,480,704 splunk-9.4.0-6b4ebe426ca6-windows-x64.msi
+27-01-2025  11:43       185,204,736 splunkforwarder-9.4.0-6b4ebe426ca6-windows-x64.msi
+07-07-2025  19:30         1,155,018 SQL PROJECT.pdf
+11-02-2025  13:59        54,263,860 SQL-20250211T082836Z-001.zip
+11-02-2025  13:59        54,263,860 SQL-20250211T082849Z-001.zip
+17-09-2024  13:21         4,290,992 SQL2022-SSEI-Expr.exe
+17-09-2024  13:28       496,190,328 SSMS-Setup-ENU.exe
+25-10-2024  10:21       102,173,136 StellarDataRecovery-H.exe
+07-07-2025  12:38         1,035,398 story
+11-07-2023  18:42         2,685,008 TurboC___for_Windows_7_v3.7.8.9.zip
+13-04-2025  10:05         1,849,698 unit 5 basic concepts.pdf
+12-04-2025  12:27           882,552 UNIT-I@MPMC.pdf
+07-07-2025  20:39        21,173,092 VAPT PROJECT (1).docx
+07-07-2025  20:39        21,173,092 VAPT PROJECT (2).docx
+07-07-2025  20:38        21,173,092 VAPT PROJECT.docx
+05-07-2025  14:43           155,752 vijay-resume.pdf
+19-09-2024  12:36       110,639,152 VirtualBox-7.1.0-164728-Win.exe
+24-10-2024  14:08       222,870,776 VMware-player-17.6.1-24319023.exe
+05-07-2024  14:36        99,515,072 VSCodeUserSetup-x64-1.91.0.exe
+07-07-2025  21:02         4,455,568 vs_BuildTools.exe
+07-02-2024  11:43         1,792,095 weather.csv
+24-11-2023  17:16           483,712 webex.exe
+13-06-2025  10:13           350,752 WhatsApp Image 2025-06-13 at 5.28.43 AM.jpeg
+13-06-2025  10:13           443,433 WhatsApp Image 2025-06-13 at 5.28.44 AM.jpeg
+05-07-2025  16:00            94,394 WhatsApp Image 2025-07-05 at 15.36.33_928e85a9.jpg
+10-06-2025  15:16         1,104,440 WhatsApp Installer (1).exe
+10-06-2025  15:01         1,104,440 WhatsApp Installer.exe
+22-10-2024  17:10     3,224,686,592 Windows_7_Professional_x64.iso
+21-09-2024  14:18         3,948,120 winrar-x64-701.exe
+24-10-2024  12:54    <DIR>          win_en
+24-10-2024  13:25    17,580,748,787 win_en.rar
+24-10-2024  12:58    <DIR>          win_se
+24-10-2024  00:00     4,803,991,447 win_se.rar
+25-09-2024  10:57        87,262,448 Wireshark-4.4.0-x64.exe
+             148 File(s) 37,382,754,155 bytes
+               7 Dir(s)  219,260,534,784 bytes free
+
+C:\Users\banda\Downloads>mkdir SmartAttendanceSystem
+
+C:\Users\banda\Downloads>cd SmartAttendanceSystem
+
+C:\Users\banda\Downloads\SmartAttendanceSystem>python register.py
+python: can't open file 'C:\\Users\\banda\\Downloads\\SmartAttendanceSystem\\register.py': [Errno 2] No such file or directory
+
+C:\Users\banda\Downloads\SmartAttendanceSystem>python register.py
+Enter student name: gangothri
+Saved gangothri_0.jpg
+Saved gangothri_1.jpg
+Saved gangothri_2.jpg
+Saved gangothri_3.jpg
+Saved gangothri_4.jpg
+
+C:\Users\banda\Downloads\SmartAttendanceSystem>cd %USERPROFILE%\Downloads\SmartAttendanceSystem
+
+C:\Users\banda\Downloads\SmartAttendanceSystem>python register.py
+
+Output:
+
+Enter student name: anu
+Saved anu_0.jpg
+Saved anu_1.jpg
+Saved anu_2.jpg
+Saved anu_3.jpg
+Saved anu_4.jpg
